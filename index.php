@@ -5,11 +5,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
-		body {
-			font-family: 'Roboto', sans-serif;
-			background-color: var(--white);
-			color: var(--black);
-		}
 		:root {
 			--realwhite	: #fafafa;
 			--white		: #eaeaea;
@@ -17,18 +12,21 @@
 			--purple	: #b91450;
 			--yellow	: #ffff80;
 		}
+		body {
+			font-family: 'Roboto', sans-serif;
+			background-color: var(--white);
+			color: var(--black);
+		}
 		.card {
 			width: 400px;
 			margin: 15px 15px 30px;
 			padding: 30px 50px;
-			color: var(--black);
 			border-radius: 15px;
 			background-color: var(--realwhite);
 			box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 		}
 		.author {
 			color:var(--purple);
-			text-align: right;
 			text-align: right;
 		}
 		.high {
@@ -93,7 +91,7 @@
 		<?php echo $html ?>
 	</div>
 
-	<p>Keyname passato in GET : <em>badword=<span class="high"><?php echo $badword; ?></span></em>.</p>
+	<p>Passato in GET : <em>badword=<span class="high"><?php echo $badword; ?></span></em></p>
 
 	<p>Il testo:</p>
 	<ul>
